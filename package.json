@@ -1,0 +1,21 @@
+{
+  "name": "std-token-api",
+  "version": "1.0.0",
+  "description": "student token api to interact with smart contracts in student token system",
+  "main": "std.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "v4zha",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.23.21",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
