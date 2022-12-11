@@ -1,5 +1,5 @@
 import { Address, StdEvent, StdEventApproval, StdEventDesc, StdEventId, StdEventState } from "./types";
-
+import { astCtx } from "./astkn";
 /**
 * Event Module
 *
@@ -23,9 +23,9 @@ import { Address, StdEvent, StdEventApproval, StdEventDesc, StdEventId, StdEvent
 *
 * login flag is returned by checking if address exits in registered students
 */
-export const stdLogin = async (_addr: Address): Promise<Boolean> => {
+export const stdLogin = async (addr: Address): Promise<Boolean> => {
   //Mock data to login any student
-  return new Promise((resolve, _) => resolve(true));
+  return await astCtx.student?.getSdStatus(addr);
 }
 
 /**

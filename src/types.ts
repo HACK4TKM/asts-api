@@ -1,3 +1,5 @@
+import Std from "../assets/Student.json";
+import Ast from "../assets/ASTEvent.json";
 /**
  * 
  * Types Module
@@ -188,3 +190,9 @@ export interface StdEventApproval {
   */
   approval: Boolean;
 }
+
+export interface Window {
+  ethereum: any
+}
+export type StdABI = typeof Std.abi;
+export type StdEventsABI = typeof Ast.abi;
